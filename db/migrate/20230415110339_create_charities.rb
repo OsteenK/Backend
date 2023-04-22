@@ -8,7 +8,7 @@ class CreateCharities < ActiveRecord::Migration[7.0]
       t.string :img_url
       t.integer :goal_amount
       t.integer :total_donations
-      t.integer :administrator_id, null: false, foreign_key: true
+      t.integer :administrator_id
       t.boolean :approved
 
       t.timestamps
